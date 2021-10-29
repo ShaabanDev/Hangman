@@ -11,3 +11,19 @@ window.addEventListener("keypress", (e) => {
   han.getStatus();
   guessesEl.textContent = han.statusMessage;
 });
+
+getPuzzle("3", (error, puzzle) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(puzzle);
+  }
+});
+
+getCountryInfo("EG", (error, country) => {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(country.nativeName);
+  }
+});
